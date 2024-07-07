@@ -21,3 +21,4 @@ var/
 *.egg
 MANIFEST
 *.log
+package-lock.json
