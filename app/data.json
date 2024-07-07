@@ -1,0 +1,206 @@
+[
+    {
+        "id": "1",
+        "brand": "Apple",
+        "models": [
+            {
+                "name": "iPhone 12 Pro",
+                "colors": [
+                    {
+                        "name": "Silver",
+                        "battery": "Large capacity",
+                        "prices": [
+                            {"storage": "256GB", "price": 1099.99, "imageUrl": "https://cdn11.bigcommerce.com/s-ahgfi493tw/images/stencil/750x750/products/2568/6548/Pastel_Silver_-_iPhone_12_Pro_Max_Mock_Up__52536.1621935887.jpg"},
+                            {"storage": "500GB", "price": 2000.99, "imageUrl": "https://cdn11.bigcommerce.com/s-ahgfi493tw/images/stencil/750x750/products/2568/6548/Pastel_Silver_-_iPhone_12_Pro_Max_Mock_Up__52536.1621935887.jpg"},
+                            {"storage": "1TB", "price": 4999.99, "imageUrl": "https://cdn11.bigcommerce.com/s-ahgfi493tw/images/stencil/750x750/products/2568/6548/Pastel_Silver_-_iPhone_12_Pro_Max_Mock_Up__52536.1621935887.jpg"}
+                        ]
+                    },
+                    {
+                        "name": "Gold",
+                        "battery": "Large capacity",
+                        "prices": [
+                            {"storage": "256GB", "price": 1099.99, "imageUrl": "https://i.ebayimg.com/images/g/2PIAAOSwD9FiO4K5/s-l1200.jpg"},
+                            {"storage": "500GB", "price": 1099.99, "imageUrl": "https://i.ebayimg.com/images/g/2PIAAOSwD9FiO4K5/s-l1200.jpg"},
+                            {"storage": "1TB", "price": 1099.99, "imageUrl": "https://i.ebayimg.com/images/g/2PIAAOSwD9FiO4K5/s-l1200.jpg"}
+                        ]
+                    },
+                    {
+                        "name": "Graphite",
+                        "battery": "Large capacity",
+                        "prices": [
+                            {"storage": "256GB", "price": 1099.99, "imageUrl": "https://i.ebayimg.com/images/g/LkIAAOSwsR5kXIYY/s-l1200.jpg"},
+                            {"storage": "500GB", "price": 1099.99, "imageUrl": "https://i.ebayimg.com/images/g/LkIAAOSwsR5kXIYY/s-l1200.jpg"},
+                            {"storage": "2TB", "price": 1099.99, "imageUrl": "https://i.ebayimg.com/images/g/LkIAAOSwsR5kXIYY/s-l1200.jpg"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "iPhone 14",
+                "colors": [
+                    {
+                        "name": "Red",
+                        "battery": "Large capacity",
+                        "prices": [
+                            {"storage": "256GB", "price": 1099.99, "imageUrl": "https://i.ebayimg.com/images/g/yqMAAOSw-ylmMVXz/s-l1600.jpg"},
+                            {"storage": "500GB", "price": 2000.99, "imageUrl": "https://i.ebayimg.com/images/g/yqMAAOSw-ylmMVXz/s-l1600.jpg"},
+                            {"storage": "1TB", "price": 4999.99, "imageUrl": "https://i.ebayimg.com/images/g/yqMAAOSw-ylmMVXz/s-l1600.jpg"}
+                        ]
+                    },
+                    {
+                        "name": "Gold",
+                        "battery": "Large capacity",
+                        "prices": [
+                            {"storage": "256GB", "price": 1099.99, "imageUrl": "https://i.ebayimg.com/images/g/EC8AAOSwO1Fh-YGH/s-l400.jpg"},
+                            {"storage": "500GB", "price": 1450, "imageUrl": "https://i.ebayimg.com/images/g/EC8AAOSwO1Fh-YGH/s-l400.jpg"},
+                            {"storage": "1TB", "price": 3000, "imageUrl": "https://i.ebayimg.com/images/g/EC8AAOSwO1Fh-YGH/s-l400.jpg"}
+                        ]
+                    },
+                    {
+                        "name": "Black",
+                        "battery": "Large capacity",
+                        "prices": [
+                            {"storage": "256GB", "price": 1099.99, "imageUrl": "https://images.mobilefun.co.uk/graphics/450pixelp/90974.jpg"},
+                            {"storage": "500GB", "price": 1450, "imageUrl": "https://images.mobilefun.co.uk/graphics/450pixelp/90974.jpg"},
+                            {"storage": "2TB", "price": 3000, "imageUrl": "https://images.mobilefun.co.uk/graphics/450pixelp/90974.jpg"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "brand": "Samsung",
+        "models": [
+            {
+                "name": "Galaxy S21 Ultra",
+                "colors": [
+                    {
+                        "name": "Phantom Black",
+                        "battery": "4500mAh",
+                        "prices": [
+                            {"storage": "256GB", "price": 1199.99, "imageUrl": "https://i.ebayimg.com/images/g/Lf8AAOSw25dgAYnC/s-l600.jpg"},
+                            {"storage": "500GB", "price": 3999.99, "imageUrl": "https://i.ebayimg.com/images/g/Lf8AAOSw25dgAYnC/s-l600.jpg"}
+                        ]
+                    },
+                    {
+                        "name": "Phantom Silver",
+                        "battery": "4500mAh",
+                        "prices": [
+                            {"storage": "256GB", "price": 1199.99, "imageUrl": "https://i.ebayimg.com/images/g/K0sAAOSwxM5mAUQ9/s-l225.jpg"},
+                            {"storage": "500GB", "price": 3999.99, "imageUrl": "https://i.ebayimg.com/images/g/K0sAAOSwxM5mAUQ9/s-l225.jpg"}
+                        ]
+                    },
+                    {
+                        "name": "Phantom Titanium",
+                        "battery": "4500mAh",
+                        "prices": [
+                            {"storage": "256GB", "price": 1199.99, "imageUrl": "https://i.ebayimg.com/images/g/djoAAOSwzyVmTlK1/s-l1200.jpg"},
+                            {"storage": "500GB", "price": 3999.99, "imageUrl": "https://i.ebayimg.com/images/g/djoAAOSwzyVmTlK1/s-l1200.jpg"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "brand": "OnePlus",
+        "models": [
+            {
+                "name": "plus 8 pro",
+                "colors": [
+                    {
+                        "name": "Green",
+                        "battery": "4500mAh",
+                        "prices": [
+                            {"storage": "300GB", "price": 2000, "imageUrl": "https://i.ebayimg.com/images/g/8TUAAOSwUgFjtTIF/s-l1600.jpg"},
+                            {"storage": "500GB", "price": 3000, "imageUrl": "https://i.ebayimg.com/images/g/8TUAAOSwUgFjtTIF/s-l1600.jpg"}
+                        ]
+                    },
+                    {
+                        "name": "Purple",
+                        "battery": "500mAh",
+                        "prices": [
+                            {"storage": "256GB", "price": 1199.99, "imageUrl": "https://i.ebayimg.com/images/g/k~cAAOSwugVh6GVu/s-l1200.jpg"},
+                            {"storage": "500GB", "price": 3000, "imageUrl": "https://i.ebayimg.com/images/g/k~cAAOSwugVh6GVu/s-l1200.jpg"}
+                        ]
+                    },
+                    {
+                        "name": "Cyan",
+                        "battery": "400mAh",
+                        "prices": [
+                            {"storage": "256GB", "price": 1199.99, "imageUrl": "https://i.ebayimg.com/images/g/1LsAAOSwnQ5epULh/s-l1200.jpg"},
+                            {"storage": "500GB", "price": 3000, "imageUrl": "https://i.ebayimg.com/images/g/1LsAAOSwnQ5epULh/s-l1200.jpg"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "brand": "Andriod",
+        "models": [
+            {
+                "name": "Itel A 70",
+                "colors": [
+                    {
+                        "name": "Black",
+                        "battery": "4500mAh",
+                        "prices": [
+                            {"storage": "256GB", "price": 1199.99, "imageUrl": "https://i.ebayimg.com/images/g/cgYAAOSwKIBlmsVd/s-l400.jpg"},
+                            {"storage": "300GB", "price": 1199.99, "imageUrl": "https://i.ebayimg.com/images/g/cgYAAOSwKIBlmsVd/s-l400.jpg"}
+                        ]
+                    },
+                    {
+                        "name": "Silver",
+                        "battery": "4500mAh",
+                        "prices": [
+                            {"storage": "256GB", "price": 1199.99, "imageUrl": "https://i.ebayimg.com/images/g/LD0AAOSw1PJmDHCA/s-l1200.jpg"},
+                            {"storage": "300GB", "price": 1199.99, "imageUrl": "https://i.ebayimg.com/images/g/LD0AAOSw1PJmDHCA/s-l1200.jpg"}
+                        ]
+                    },
+                    {
+                        "name": "Green",
+                        "battery": "4500mAh",
+                        "prices": [
+                            {"storage": "256GB", "price": 1199.99, "imageUrl": "https://m.media-amazon.com/images/I/51b01GBoahL._AC_UF894,1000_QL80_.jpg"},
+                            {"storage": "300GB", "price": 1199.99, "imageUrl": "https://m.media-amazon.com/images/I/51b01GBoahL._AC_UF894,1000_QL80_.jpg"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Infinix hot 40",
+                "colors": [
+                    {
+                        "name": "Black",
+                        "battery": "4500mAh",
+                        "prices": [
+                            {"storage": "256GB", "price": 1199.99, "imageUrl": "https://i.ebayimg.com/images/g/4cUAAOSwSoFl5m1N/s-l1600.jpg"},
+                            {"storage": "300GB", "price": 3000, "imageUrl": "https://i.ebayimg.com/images/g/4cUAAOSwSoFl5m1N/s-l1600.jpg"}
+                        ]
+                    },
+                    {
+                        "name": "Red",
+                        "battery": "4500mAh",
+                        "prices": [
+                            {"storage": "256GB", "price": 1199.99, "imageUrl": "https://i.ebayimg.com/images/g/dUMAAOSwDbdlcoW6/s-l1200.jpg"},
+                            {"storage": "300GB", "price": 2000, "imageUrl": "https://i.ebayimg.com/images/g/dUMAAOSwDbdlcoW6/s-l1200.jpg"}
+                        ]
+                    },
+                    {
+                        "name": "Blue",
+                        "battery": "4500mAh",
+                        "prices": [
+                            {"storage": "256GB", "price": 1199.99, "imageUrl": "https://i.ebayimg.com/images/g/1aMAAOSwxjhim2XE/s-l1200.jpg"},
+                            {"storage": "300GB", "price": 1199.99, "imageUrl": "https://i.ebayimg.com/images/g/1aMAAOSwxjhim2XE/s-l1200.jpg"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
