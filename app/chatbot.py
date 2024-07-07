@@ -50,9 +50,9 @@ def handle_chat(message):
                 # Filter phones by selected brand, model, and color
                 available_phones = []
                 for phone in smartphones:
-                    if phone['brand'] == selected_brand['brand']:
+                    if phone['brand'].lower() == selected_brand['brand'].lower():
                         for model in phone['models']:
-                            if model['name'] == selected_model['name']:
+                            if model['name'].lower() == selected_model['name'].lower():
                                 for color in model['colors']:
                                     if color['name'].lower() == chosen_color['name'].lower():
                                         for price in color['prices']:
