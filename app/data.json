@@ -109,7 +109,7 @@
         "brand": "OnePlus",
         "models": [
             {
-                "name": "plus 8 pro",
+                "name": "Plus Pro",
                 "colors": [
                     {
                         "name": "Green",
@@ -144,7 +144,7 @@
         "brand": "Andriod",
         "models": [
             {
-                "name": "Itel A 70",
+                "name": "Tecno spark",
                 "colors": [
                     {
                         "name": "Black",
@@ -173,7 +173,7 @@
                 ]
             },
             {
-                "name": "Infinix hot 40",
+                "name": "Infinix hot",
                 "colors": [
                     {
                         "name": "Black",

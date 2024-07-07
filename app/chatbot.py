@@ -1,3 +1,4 @@
+import requests
 import json
 
 # Load smartphone data from JSON file
@@ -9,6 +10,7 @@ selected_brand = None
 selected_model = None
 available_phones = []
 selected_phone_details = {}
+PAYSTACK_SECRET_KEY = "sk_test_73d239b922a8dbe050ada4b7f453580c0c8e5a86"
 
 def handle_chat(message):
     global selected_brand, selected_model, available_phones, selected_phone_details
@@ -96,19 +98,16 @@ def handle_chat(message):
             else:
                 response = "Sorry, I didn't understand that selection. Please choose a valid storage option number."
 
-        elif "card" in message:
-            if selected_phone_details:
-                response = f"Congratulations! You have successfully made payment with your card. Your {selected_phone_details['brand']} {selected_phone_details['model']} will be shipped to you. Thank you for using this channel👋"
-                selected_phone_details = {}
-            else:
-                response = "I'm sorry, I didn't understand that. Please select a phone and storage option first."
-
-        elif "transfer" in message:
-            if selected_phone_details:
-                response = f"Congratulations! You have successfully made payment via transfer.\n Your {selected_phone_details['brand']} {selected_phone_details['model']} will be shipped to you. Thank you for using this channel👋"
-                selected_phone_details = {}
-            else:
-                response = "I'm sorry, I didn't understand that. Please select a phone and storage option first."
+        elif "card" in message or "transfer" in message:
+                if selected_phone_details:
+                    try:
+                        payment_link = initialize_paystack_transaction("customer@email.com", selected_phone_details['price'], selected_phone_details['brand'])
+                        response = f"Please proceed with the payment by clicking on this link: {payment_link}"
+                    except Exception as e:
+                        response = f"An error occurred while initializing the payment: {str(e)}"
+                    selected_phone_details = {}
+                else:
+                    response = "I'm sorry, I didn't understand that. Please select a phone and storage option first."
 
         else:
             response = "I'm sorry, I didn't understand that selection. Try Again!!!'."
@@ -117,3 +116,22 @@ def handle_chat(message):
         response = f"An error occurred: {str(e)}"
 
     return response
+
+
+def initialize_paystack_transaction(email, amount, brand):
+    url = "https://api.paystack.co/transaction/initialize"
+    headers = {
+        "Authorization": f"Bearer {PAYSTACK_SECRET_KEY}",
+        "Content-Type": "application/json"
+    }
+    data = {
+        "email": email,
+        "amount": amount * 100,
+        "brand": brand,
+    }
+    response = requests.post(url, headers=headers, json=data)
+    response_data = response.json()
+    if response_data['status']:
+        return response_data['data']['authorization_url']
+    else:
+        raise Exception(response_data['message'])
