@@ -24,7 +24,9 @@ def handle_chat(message):
             selected_brand = next((phone for phone in smartphones if phone['brand'].lower() in message), None)
             if selected_brand:
                 models = list(set(model['name'] for model in selected_brand['models']))
-                response = f"Great choice! Which model of {selected_brand['brand']} are you looking for?\n Models Available: \n{'\n '.join(models)}."
+                response = f"""Great choice! Which model of {selected_brand['brand']} are you looking for?
+                Models Available: 
+                {', '.join(models)}."""
             else:
                 available_brands = list(set(phone['brand'] for phone in smartphones))
                 response = f"Sorry, we don't have {message.capitalize()} in our store. Here are the brands available: {', '.join(available_brands)}."
@@ -33,7 +35,9 @@ def handle_chat(message):
             selected_model = next((model for model in selected_brand['models'] if model['name'].lower() in message), None)
             if selected_model:
                 colors = list(set(color['name'] for color in selected_model['colors']))
-                response = f"Excellent! What color are you considering for the {selected_model['name']}?\n Colors Available: \n{'\n '.join(colors)}."
+                response = f"""Excellent! What color are you considering for the {selected_model['name']}?
+                Colors Available: 
+                {', '.join(colors)}."""
             else:
                 available_models = list(set(model['name'] for model in selected_brand['models']))
                 response = f"Sorry, we don't have that model in our store. Here are the available models: {', '.join(available_models)}."
@@ -57,7 +61,10 @@ def handle_chat(message):
                 if available_phones:
                     response = f"Perfect Choice! Here are the phones available in {chosen_color['name']} color:\n"
                     for idx, (phone, model, color, price) in enumerate(available_phones, start=1):
-                        response += f"{idx}. {phone['brand']} \n {model['name']},\n Storage: {price['storage']},\n Price: ${price['price']}, \n Image: {price['imageUrl']}\n"
+                        response += f"""{idx}. {phone['brand']} {model['name']},
+                        Storage: {price['storage']},
+                        Price: ${price['price']}, 
+                        Image: {price['imageUrl']}\n"""
                     response += "Please select the number corresponding to your desired storage option."
                 else:
                     response = f"Sorry, we don't have any phones available in {chosen_color['name']} color."
@@ -77,8 +84,14 @@ def handle_chat(message):
                     'price': selected_phone[3]['price'],
                     'imageUrl': selected_phone[3]['imageUrl']
                 }
-                response = f"You've selected:\n{selected_phone_details['brand']} {selected_phone_details['model']},\n Storage: {selected_phone_details['storage']},\n Price: ${selected_phone_details['price']},\n Image: {selected_phone_details['imageUrl']}\n"
-                response += "Please make the payment to proceed with your order.\n Payment Type:\n Card or Transfer"
+                response = f"""You've selected:
+                {selected_phone_details['brand']} {selected_phone_details['model']},
+                Storage: {selected_phone_details['storage']},
+                Price: ${selected_phone_details['price']},
+                Image: {selected_phone_details['imageUrl']}
+                Please make the payment to proceed with your order.
+                Payment Type:
+                Card or Transfer"""
 
             else:
                 response = "Sorry, I didn't understand that selection. Please choose a valid storage option number."
